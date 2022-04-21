@@ -5,12 +5,15 @@ $(document).ready(function(){
         var idenlace = $(this).attr("id");
         $("#destacado").text(idenlace);
        $(this).fadeTo("fast", 0.5);
+        $('.div').css('background', 'aliceblue');
+        $(".destacado").text("Titulo");
        
     });
     
     div.mouseleave(function(){
-        $("#destacado").text("Hola");
+        $(".destacado").text("Hola");
         $(this).fadeTo("fast", 1);
+        $('.div').css('background', 'bisque');
     });    
     
     div.click(function(){
